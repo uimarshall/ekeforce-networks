@@ -348,6 +348,60 @@ h3 {
 	color: var(--transparentGray);
 }
 
+/* SERVICES */
+#services {
+	padding: 100px 0 50px 0;
+	background-color: var(--mainWhite);
+	margin-top: -140px;
+}
+#services .container {
+	margin-top: 100px;
+}
+#services .col-md-4 img {
+	margin-bottom: 30px;
+	height: 85px;
+}
+#services .col-md-4 img:hover {
+	transform: scale(1.2);
+	transition: all 0.4s ease-in-out;
+}
+#service-1::after,
+#service-2::after {
+	content: "";
+	position: absolute;
+	right: -60px;
+	top: 50px;
+	width: 10vw; /*10% of the view port width*/
+	height: 2px;
+	border: 1px dotted var(--mainBlue);
+	background: var(--mainGrey);
+}
+#services h4 {
+	font-family: var(--roboto);
+	font-weight: 700;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	color: #333 !important;
+}
+p {
+	font-family: var(--roboto);
+	color: var(--mainGrey);
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+.btn-service {
+	color: #444;
+	border: 1px solid #555;
+	width: 50%;
+	margin-bottom: 20px;
+	font-family: var(--roboto);
+	border-radius: 25px;
+	text-transform: capitalize;
+}
+.btn-service:hover {
+	background: var(--mainGrey);
+}
+
 /* MEDIA QUERY */
 @media (min-width: 300px) {
 	#mainNav.navbar-shrink {

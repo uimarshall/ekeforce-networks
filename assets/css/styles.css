@@ -10,7 +10,7 @@
 	--textGraySignUpLinks: #feffeb;
 	--BlueSignUpLinksHover: #f7352a;
 	--textGray: #1833c4;
-	--darkBlue: #0e1a35;
+	--darkBlue: #0e1934;
 	--lightBlue: #5584ff;
 	--lightGray: #8492af;
 	--mainBlue: #40acf1;
@@ -288,6 +288,71 @@ h5 a {
 .nav-link.active,
 .nav-link:hover {
 	color: var(--mainWhite) !important;
-	background: lightblue !important;
+	background: var(--mainBlue) !important;
 	border-radius: 17px;
+}
+
+/* HEADER */
+header {
+	color: var(--mainWhite);
+	background-image: url("../images/blueBg.jpg");
+	background-repeat: no-repeat;
+	/* center LR & top buttom */
+	background-position: center center;
+	background-size: cover;
+}
+header .container {
+	/* background-image: url("../images/blue-graphBgImg.png"); */
+	background-repeat: repeat-x;
+	animation: animatedSroke 10s linear infinite;
+	@keyframes animatedStroke {
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: 100% 0;
+		}
+	}
+}
+
+.intro-text {
+	padding-top: 150px;
+}
+h1 {
+	font-size: 40px;
+	line-height: 22px;
+	margin-bottom: 25px;
+	font-family: var(--roboto);
+	font-weight: 100;
+	text-transform: capitalize;
+}
+h3 {
+	font-size: 30px;
+	line-height: 50px;
+	margin-bottom: 25px;
+	font-family: var(--josefin);
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.btn-header {
+	padding: 8px 34px;
+	font-family: var(--roboto);
+	background: var(--lightBlue);
+	color: var(--mainWhite);
+	border-radius: 25px;
+	margin-bottom: 40px;
+}
+.btn-header:hover {
+	background: transparent;
+	border: 1px solid var(--lightBlue);
+	color: var(--transparentGray);
+}
+
+/* MEDIA QUERY */
+@media (min-width: 300px) {
+	#mainNav.navbar-shrink {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: rgba(14, 25, 52, 0.7);
+	}
 }

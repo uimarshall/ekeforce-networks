@@ -28,6 +28,7 @@
 	--mainPurple: #38165f;
 	--deep-blue: #002333;
 	--light-green: #00e677;
+	--transparentGray: #f8f9fa;
 	/* FONTS */
 	--roboto: "Roboto", sans-serif;
 	--josefin: "Josefin Sans", sans-serif;
@@ -194,6 +195,7 @@ body {
 	background-color: var(--mainWhite);
 	overflow: hidden;
 }
+
 h1 {
 	font-size: 3em;
 	line-height: 1;
@@ -248,7 +250,7 @@ h5 a {
 
 /* Navbar */
 #mainNav {
-	background-color: transparent;
+	background-color: transparent !important;
 	padding-top: 20px;
 	transition: padding-top 0.3s, padding-bottom 0.3s;
 }
@@ -262,6 +264,30 @@ h5 a {
 	margin-right: 0;
 }
 .navbar-brand img {
-	width: 100px;
-	height: 90px;
+	width: 50%;
+}
+.nav-link {
+	font-size: 14px;
+	padding: 7px 15px !important;
+	letter-spacing: 1px;
+	color: var(--mainWhite);
+	font-family: var(--roboto);
+	border: 3px solid transparent;
+}
+#login {
+	padding: 8px 30px !important;
+	background-color: var(--darkBlue);
+	color: var(--lightBlue);
+	border: 1px solid var(--lightBlue);
+	border-radius: 25px;
+}
+#login:hover {
+	background-color: var(--lightBlue);
+	color: var(--mainWhite);
+}
+.nav-link.active,
+.nav-link:hover {
+	color: var(--mainWhite) !important;
+	background: lightblue !important;
+	border-radius: 17px;
 }
